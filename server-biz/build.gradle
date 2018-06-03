@@ -1,0 +1,7 @@
+
+archivesBaseName = 'server-biz'
+dependencies {
+	compile(
+        project(':server-base')
+    )
+}
