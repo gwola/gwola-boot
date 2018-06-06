@@ -14,8 +14,6 @@ import org.goodfox.gwola.util.http.Result;
 import org.goodfox.gwola.util.utils.StringUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.goodfox.gwola.util.utils.StringUtils;
-import org.hibernate.validator.constraints.NotBlank;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.NotEmpty;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -85,8 +84,8 @@ public class WeixinAuthController {
     @ApiOperation(value = "登录")
     @GetMapping(value = "/login")
     @ResponseBody
-    public ResponseMessage loginRest(HttpServletRequest request, @NotBlank(message = "请输入用户名") String account,
-                                     @NotBlank(message = "请输入密码") String password) {
+    public ResponseMessage loginRest(HttpServletRequest request, @NotEmpty(message = "请输入用户名") String account,
+                                     @NotEmpty(message = "请输入密码") String password) {
         String authCode = "";
         try {
             String openId = (String) request.getSession().getAttribute("openId");

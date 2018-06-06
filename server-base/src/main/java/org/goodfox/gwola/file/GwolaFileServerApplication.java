@@ -7,8 +7,6 @@ import org.goodfox.gwola.util.persistence.BaseRepositoryImpl;
 import org.goodfox.gwola.util.utils.DataSourceUtils;
 import org.goodfox.gwola.util.utils.SpringContextHolder;
 import org.goodfox.gwola.util.utils.SwaggerUtils;
-import org.goodfox.gwola.util.utils.SpringContextHolder;
-import org.goodfox.gwola.util.utils.SwaggerUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,9 +27,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.multipart.MultipartException;
-import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
@@ -46,12 +42,12 @@ import javax.sql.DataSource;
 @EnableSwagger2
 @SpringBootApplication
 @ControllerAdvice
-public class OneFileServerApplication {
+public class GwolaFileServerApplication {
 
-    private static final Logger logger = LoggerFactory.getLogger(OneFileServerApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(GwolaFileServerApplication.class);
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = SpringApplication.run(OneFileServerApplication.class, args);
+        ApplicationContext applicationContext = SpringApplication.run(GwolaFileServerApplication.class, args);
         SpringContextHolder.setApplicationContext(applicationContext);
         logger.info("Registry ApplicationContext");
     }

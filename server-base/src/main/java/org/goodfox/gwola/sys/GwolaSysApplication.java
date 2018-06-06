@@ -4,8 +4,6 @@ import org.goodfox.gwola.util.persistence.BaseRepositoryImpl;
 import org.goodfox.gwola.util.utils.DataSourceUtils;
 import org.goodfox.gwola.util.utils.SpringContextHolder;
 import org.goodfox.gwola.util.utils.SwaggerUtils;
-import org.goodfox.gwola.util.utils.SpringContextHolder;
-import org.goodfox.gwola.util.utils.SwaggerUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,12 +31,12 @@ import javax.sql.DataSource;
 @EntityScan("org.goodfox.gwola")
 @EnableSwagger2
 @SpringBootApplication
-public class OneSysApplication {
+public class GwolaSysApplication {
 
-    private static final Logger logger = LoggerFactory.getLogger(OneSysApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(GwolaSysApplication.class);
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = SpringApplication.run(OneSysApplication.class, args);
+        ApplicationContext applicationContext = SpringApplication.run(GwolaSysApplication.class, args);
         SpringContextHolder.setApplicationContext(applicationContext);
         logger.info("Registry ApplicationContext");
     }

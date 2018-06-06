@@ -1,16 +1,17 @@
-package org.goodfox.gwola.msg;
+package org.goodfox.gwola.weixin;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.goodfox.gwola.util.filter.RequestInfoFilter;
 import org.goodfox.gwola.util.persistence.BaseRepositoryImpl;
-import org.goodfox.gwola.util.utils.SpringContextHolder;
 import org.goodfox.gwola.util.utils.SpringContextHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -39,12 +40,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @SpringBootApplication
 @ControllerAdvice
-public class OneMsgApplication {
+public class GwolaWeixinApplication {
 
-    private static final Logger logger = LoggerFactory.getLogger(OneMsgApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(GwolaWeixinApplication.class);
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = SpringApplication.run(OneMsgApplication.class, args);
+        ApplicationContext applicationContext = SpringApplication.run(GwolaWeixinApplication.class, args);
         SpringContextHolder.setApplicationContext(applicationContext);
         logger.info("Registry ApplicationContext");
     }
@@ -72,4 +73,13 @@ public class OneMsgApplication {
         return new ThreadPoolTaskExecutor();
     }
 
+    @Bean
+    public FilterRegistrationBean requestInfoFilter() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new RequestInfoFilter());
+        registration.addUrlPatterns("/*");
+        registration.setName("RequestInfoFilter");
+        registration.setOrder(10);
+        return registration;
+    }
 }
