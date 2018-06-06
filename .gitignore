@@ -1,3 +1,6 @@
+### Redis ###
+*.rdb
+
 ### STS ###
 .apt_generated
 .classpath
