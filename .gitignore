@@ -18,6 +18,8 @@
 ### Gradle ###
 .gradle
 /build/
+#IDEA Build DIR
+/out/
 
 # Ignore Gradle GUI config
 gradle-app.setting
