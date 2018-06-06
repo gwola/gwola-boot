@@ -5,7 +5,6 @@ import org.goodfox.gwola.user.entity.UserInfoEO;
 import org.goodfox.gwola.user.service.UserInfoEOService;
 import org.goodfox.gwola.util.bean.LoginUser;
 import org.goodfox.gwola.util.utils.RequestUtils;
-import org.goodfox.gwola.util.utils.RequestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

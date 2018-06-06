@@ -1,11 +1,9 @@
 package org.goodfox.gwola.login.service;
 
 import org.goodfox.gwola.base.utils.LoginUserUtils;
-import org.goodfox.gwola.login.utils.UserUtilService;
 import org.goodfox.gwola.user.constant.UserInfoTypeEnum;
 import org.goodfox.gwola.user.service.UserInfoEOService;
 import org.goodfox.gwola.util.bean.LoginUser;
-import org.goodfox.gwola.util.utils.UUID;
 import org.goodfox.gwola.util.utils.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package org.goodfox.gwola.login.utils;
+package org.goodfox.gwola.login.service;
 
 import org.goodfox.gwola.sys.entity.SysOfficeEO;
 import org.goodfox.gwola.user.constant.UserInfoTypeEnum;
