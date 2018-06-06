@@ -1,8 +1,3 @@
-/**
- * Copyright (c) 2005-2012 springside.org.cn
- * <p>
- * Licensed under the Apache License, Version 2.0 (the "License");
- */
 package org.goodfox.gwola.util.utils.cipher;
 
 
@@ -10,7 +5,7 @@ import org.goodfox.gwola.util.utils.Exceptions;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.text.StringEscapeUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
