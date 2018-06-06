@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
 <ehcache updateCheck="false" name="defaultCache">
 
-	<diskStore path="java.io.tmpdir/gwola/ehcache/default" />
+	<diskStore path="java.io.tmpdir/gwola-boot/ehcache/default" />
 
 	<!-- DefaultCache setting. -->
 	<defaultCache maxEntriesLocalHeap="100" eternal="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
