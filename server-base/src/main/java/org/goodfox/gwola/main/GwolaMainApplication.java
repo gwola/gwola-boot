@@ -21,12 +21,12 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 @SpringBootApplication
 @ComponentScan("org.goodfox.gwola")
-public class OneMainApplication {
+public class GwolaMainApplication {
 
-	private static final Logger logger = LoggerFactory.getLogger(OneMainApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(GwolaMainApplication.class);
 	
     public static void main(String[] args) {
-    	ApplicationContext applicationContext = SpringApplication.run(OneMainApplication.class, args);
+    	ApplicationContext applicationContext = SpringApplication.run(GwolaMainApplication.class, args);
 		SpringContextHolder.setApplicationContext(applicationContext);
 		logger.info("Registry ApplicationContext");
     }
@@ -39,6 +39,7 @@ public class OneMainApplication {
 		return template;
 	}
 
+	@SuppressWarnings("unchecked")
 	private Jackson2JsonRedisSerializer getSerializer() {
 		Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
 		ObjectMapper om = new ObjectMapper();
