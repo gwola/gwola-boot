@@ -30,8 +30,6 @@ allprojects {
 	version = '0.0.1-SNAPSHOT'
 }
 
-
-
 subprojects {
 	apply plugin: 'java'
 	apply plugin: 'idea'
@@ -39,7 +37,7 @@ subprojects {
 	apply plugin: 'io.spring.dependency-management'
 
 	sourceCompatibility = JavaVersion.VERSION_1_8
-	[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 	repositories {
 		mavenCentral()
@@ -54,11 +52,16 @@ subprojects {
 		compile('org.springframework.boot:spring-boot-starter-websocket')
 		compile('org.springframework:spring-context-support')
 
-        testCompile('org.springframework.boot:spring-boot-starter-test')
+		testCompile('org.springframework.boot:spring-boot-starter-test')
 
 		runtime('org.springframework.boot:spring-boot-devtools')
 		runtime('mysql:mysql-connector-java')
 	}
+
+	bootJar {
+		mainClassName = 'org.goodfox.gwola.main.GwolaMainApplication'
+	}
+
 }
 
 
