@@ -1,25 +1,18 @@
 archivesBaseName = 'server-base'
 dependencies {
-    compile group: 'com.alibaba', name: 'druid', version: '1.1.10'
     compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
     compile group: 'com.ibeetl', name: 'beetl', version:'2.8.3'
-    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
     compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
     compile group: 'io.springfox', name: 'springfox-swagger2', version:'2.8.0'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version:'2.8.0'
-    compile group: 'org.apache.commons', name: 'commons-text', version: '1.3'
-    compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.5.0'
-    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.5.5'
-    compile group: 'commons-io', name: 'commons-io', version:'2.5'
-    compile group: 'commons-codec', name: 'commons-codec', version:'1.11'
-    compile group: 'org.apache.poi', name: 'poi', version:'3.16'
-    compile group: 'org.apache.poi', name: 'poi-ooxml', version:'3.16'
-    compile group: 'org.apache.shiro', name: 'shiro-core', version:'1.4.0'
-    compile group: 'org.apache.shiro', name: 'shiro-spring', version:'1.4.0'
-    compile group: 'org.apache.shiro', name: 'shiro-web', version:'1.4.0'
-    compile group: 'org.apache.shiro', name: 'shiro-ehcache', version:'1.4.0'
-    compile group: 'net.sf.ehcache', name: 'ehcache-core', version:'2.6.6'
-    compile group: 'net.sf.ehcache', name: 'ehcache-web', version:'2.0.4'
-    compile group: 'com.foxinmy', name: 'weixin4j-base', version:'1.7.9'
-    compile group: 'com.foxinmy', name: 'weixin4j-mp', version:'1.7.9'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+    compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '2.2.0'
+    compile group: 'cn.hutool', name: 'hutool-all', version: '4.0.5'
+    compile group: 'com.qiniu', name: 'qiniu-java-sdk', version:'[7.2.0, 7.2.99]'
+    compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version:'1.18'
+
+    annotationProcessor("org.projectlombok:lombok:1.16.20")
+    compileOnly("org.projectlombok:lombok:1.16.20")
+    testAnnotationProcessor("org.projectlombok:lombok:1.16.20")
+    testCompileOnly("org.projectlombok:lombok:1.16.20")
 }
