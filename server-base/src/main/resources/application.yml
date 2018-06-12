@@ -134,3 +134,18 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+
+#API
+weixin:
+
+api.aliyun:
+  #阿里云API的内或外网域名
+  endpoint:
+  #阿里云API的密钥Access Key ID
+  access-key-id:
+  #阿里云API的密钥Access Key Secret
+  access-key_secret:
+  #阿里云API的bucket名称
+  backet-name:
+  #阿里云API的文件夹名称
+  folder:
