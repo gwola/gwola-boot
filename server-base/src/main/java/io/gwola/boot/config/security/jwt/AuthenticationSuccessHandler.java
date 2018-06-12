@@ -1,8 +1,5 @@
 package io.gwola.boot.config.security.jwt;
 
-import io.gwola.boot.common.annotation.SystemLog;
-import io.gwola.boot.common.constant.SecurityConstant;
-import io.gwola.boot.common.utils.ResponseUtil;
 import cn.hutool.core.util.StrUtil;
 import com.google.gson.Gson;
 import io.gwola.boot.common.annotation.SystemLog;

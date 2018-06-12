@@ -2,7 +2,6 @@ package io.gwola.boot.controller.common;
 
 import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.common.vo.Result;
-import io.gwola.boot.common.utils.ResultUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

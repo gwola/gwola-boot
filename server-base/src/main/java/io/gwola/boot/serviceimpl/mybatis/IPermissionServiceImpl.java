@@ -1,9 +1,7 @@
 package io.gwola.boot.serviceimpl.mybatis;
 
-import io.gwola.boot.dao.mapper.PermissionMapper;
-import io.gwola.boot.entity.Permission;
-import io.gwola.boot.service.mybatis.IPermissionService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import io.gwola.boot.dao.mapper.PermissionMapper;
 import io.gwola.boot.entity.Permission;
 import io.gwola.boot.service.mybatis.IPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,5 @@
 package io.gwola.boot.service.mybatis;
 
-import io.gwola.boot.entity.Permission;
 import com.baomidou.mybatisplus.service.IService;
 import io.gwola.boot.entity.Permission;
 import org.apache.ibatis.annotations.Param;

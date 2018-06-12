@@ -1,6 +1,5 @@
 package io.gwola.boot.dao.mapper;
 
-import io.gwola.boot.entity.Permission;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import io.gwola.boot.entity.Permission;
 import org.apache.ibatis.annotations.Param;

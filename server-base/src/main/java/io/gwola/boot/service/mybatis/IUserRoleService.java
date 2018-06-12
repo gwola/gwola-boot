@@ -1,7 +1,5 @@
 package io.gwola.boot.service.mybatis;
 
-import io.gwola.boot.entity.Role;
-import io.gwola.boot.entity.UserRole;
 import com.baomidou.mybatisplus.service.IService;
 import io.gwola.boot.entity.Role;
 import io.gwola.boot.entity.UserRole;

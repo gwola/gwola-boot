@@ -5,16 +5,13 @@ import io.gwola.boot.common.lock.Callback;
 import io.gwola.boot.common.lock.RedisDistributedLockTemplate;
 import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.common.vo.Result;
-import io.gwola.boot.common.annotation.RateLimiter;
-import io.gwola.boot.common.lock.RedisDistributedLockTemplate;
-import io.gwola.boot.common.utils.ResultUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Exrickx

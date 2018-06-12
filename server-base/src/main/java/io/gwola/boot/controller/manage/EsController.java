@@ -1,23 +1,22 @@
 package io.gwola.boot.controller.manage;
 
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.http.HttpUtil;
+import com.google.gson.Gson;
 import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.common.vo.EsCount;
 import io.gwola.boot.common.vo.EsInfo;
 import io.gwola.boot.common.vo.PageVo;
 import io.gwola.boot.common.vo.Result;
-import io.gwola.boot.entity.elasticsearch.EsLog;
-import io.gwola.boot.exception.XbootException;
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.http.HttpUtil;
-import com.google.gson.Gson;
-import io.gwola.boot.common.utils.ResultUtil;
-import io.gwola.boot.exception.XbootException;
+import io.gwola.boot.exception.GwolaException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 
 /**
@@ -42,7 +41,7 @@ public class EsController {
         String healthResult= HttpUtil.get(healthUrl);
         String countResult=HttpUtil.get(countUrl);
         if(StrUtil.isBlank(healthResult)||StrUtil.isBlank(countResult)){
-            throw new XbootException("连接ES失败，请检查ES运行状态");
+            throw new GwolaException("连接ES失败，请检查ES运行状态");
         }
         EsInfo esInfo=new EsInfo();
         EsCount esCount=new EsCount();
@@ -52,7 +51,7 @@ public class EsController {
             esInfo.setCount(esCount.getCount());
         }catch (Exception e){
             e.printStackTrace();
-            throw new XbootException("获取ES信息出错");
+            throw new GwolaException("获取ES信息出错");
         }
         return new ResultUtil<EsInfo>().setData(esInfo);
     }

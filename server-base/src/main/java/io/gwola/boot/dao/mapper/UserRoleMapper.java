@@ -1,7 +1,5 @@
 package io.gwola.boot.dao.mapper;
 
-import io.gwola.boot.entity.Role;
-import io.gwola.boot.entity.UserRole;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import io.gwola.boot.entity.Role;
 import io.gwola.boot.entity.UserRole;

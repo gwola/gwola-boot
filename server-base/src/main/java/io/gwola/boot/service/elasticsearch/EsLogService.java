@@ -1,11 +1,8 @@
 package io.gwola.boot.service.elasticsearch;
 
 import io.gwola.boot.entity.elasticsearch.EsLog;
-import io.gwola.boot.entity.elasticsearch.EsLog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import java.util.List;
 
 /**
  * @author Exrickx

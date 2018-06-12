@@ -1,10 +1,10 @@
 package io.gwola.boot.common.lock;
 
-import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import redis.clients.jedis.JedisPool;
+
 import java.util.concurrent.TimeUnit;
 
 /**

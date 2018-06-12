@@ -2,8 +2,6 @@ package io.gwola.boot.exception;
 
 import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.common.vo.Result;
-import cn.hutool.core.util.StrUtil;
-import io.gwola.boot.common.utils.ResultUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -17,9 +15,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class RestCtrlExceptionHandler {
 
-    @ExceptionHandler(XbootException.class)
+    @ExceptionHandler(GwolaException.class)
     @ResponseStatus(value = HttpStatus.OK)
-    public Result<Object> handleXCloudException(XbootException e) {
+    public Result<Object> handleXCloudException(GwolaException e) {
         String errorMsg="Xboot exception";
         if (e!=null){
             errorMsg=e.getMsg();

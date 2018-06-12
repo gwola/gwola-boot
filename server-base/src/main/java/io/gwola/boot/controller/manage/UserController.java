@@ -1,22 +1,12 @@
 package io.gwola.boot.controller.manage;
 
+import cn.hutool.core.util.StrUtil;
 import io.gwola.boot.common.constant.CommonConstant;
 import io.gwola.boot.common.utils.PageUtil;
 import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.common.vo.PageVo;
 import io.gwola.boot.common.vo.Result;
 import io.gwola.boot.common.vo.SearchVo;
-import io.gwola.boot.entity.Role;
-import io.gwola.boot.entity.User;
-import io.gwola.boot.entity.UserRole;
-import io.gwola.boot.service.RoleService;
-import io.gwola.boot.service.UserRoleService;
-import io.gwola.boot.service.UserService;
-import io.gwola.boot.service.mybatis.IUserRoleService;
-import cn.hutool.core.util.StrUtil;
-import io.gwola.boot.common.constant.CommonConstant;
-import io.gwola.boot.common.utils.PageUtil;
-import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.entity.Role;
 import io.gwola.boot.entity.User;
 import io.gwola.boot.entity.UserRole;
@@ -33,13 +23,11 @@ import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.data.domain.Page;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

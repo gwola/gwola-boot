@@ -1,9 +1,9 @@
 package io.gwola.boot.entity.elasticsearch;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.gwola.boot.common.constant.CommonConstant;
 import io.gwola.boot.common.utils.ObjectUtil;
 import io.gwola.boot.common.utils.SnowFlakeUtil;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.data.elasticsearch.annotations.Document;

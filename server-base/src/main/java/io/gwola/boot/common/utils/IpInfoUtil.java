@@ -1,10 +1,10 @@
 package io.gwola.boot.common.utils;
 
 
-import io.gwola.boot.common.vo.IpLocate;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;
 import com.google.gson.Gson;
+import io.gwola.boot.common.vo.IpLocate;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServletRequest;

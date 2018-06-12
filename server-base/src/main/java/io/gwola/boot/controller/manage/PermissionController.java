@@ -1,19 +1,8 @@
 package io.gwola.boot.controller.manage;
 
 import io.gwola.boot.common.constant.CommonConstant;
-import io.gwola.boot.common.utils.PageUtil;
 import io.gwola.boot.common.utils.ResultUtil;
-import io.gwola.boot.common.vo.PageVo;
 import io.gwola.boot.common.vo.Result;
-import io.gwola.boot.entity.Permission;
-import io.gwola.boot.entity.RolePermission;
-import io.gwola.boot.service.PermissionService;
-import io.gwola.boot.service.RolePermissionService;
-import io.gwola.boot.service.mybatis.IPermissionService;
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.StrUtil;
-import io.gwola.boot.common.constant.CommonConstant;
-import io.gwola.boot.common.utils.ResultUtil;
 import io.gwola.boot.entity.Permission;
 import io.gwola.boot.entity.RolePermission;
 import io.gwola.boot.service.PermissionService;

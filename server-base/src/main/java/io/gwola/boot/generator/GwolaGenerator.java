@@ -1,7 +1,7 @@
 package io.gwola.boot.generator;
 
-import io.gwola.boot.generator.bean.EntityOfEntity;
 import cn.hutool.core.util.StrUtil;
+import io.gwola.boot.generator.bean.EntityOfEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.beetl.core.Configuration;
 import org.beetl.core.GroupTemplate;

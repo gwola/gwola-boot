@@ -6,11 +6,11 @@ import lombok.Data;
  * @author Exrickx
  */
 @Data
-public class XbootException extends RuntimeException {
+public class GwolaException extends RuntimeException {
 
     private String msg;
 
-    public XbootException(String msg){
+    public GwolaException(String msg){
         super(msg);
         this.msg = msg;
     }

@@ -1,10 +1,11 @@
 package io.gwola.boot.serviceimpl.mybatis;
 
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import io.gwola.boot.dao.mapper.UserRoleMapper;
 import io.gwola.boot.entity.Role;
 import io.gwola.boot.entity.UserRole;
 import io.gwola.boot.service.mybatis.IUserRoleService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

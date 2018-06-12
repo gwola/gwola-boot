@@ -1,9 +1,9 @@
 package io.gwola.boot.entity;
 
-import io.gwola.boot.base.entity.GwolaBaseEntity;
-import io.gwola.boot.common.constant.CommonConstant;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
+import io.gwola.boot.base.entity.GwolaBaseEntity;
+import io.gwola.boot.common.constant.CommonConstant;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

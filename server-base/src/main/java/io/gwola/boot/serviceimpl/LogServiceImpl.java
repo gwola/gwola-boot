@@ -1,9 +1,7 @@
 package io.gwola.boot.serviceimpl;
 
-import io.gwola.boot.dao.LogDao;
-import io.gwola.boot.entity.Log;
-import io.gwola.boot.service.LogService;
 import cn.hutool.core.util.StrUtil;
+import io.gwola.boot.dao.LogDao;
 import io.gwola.boot.entity.Log;
 import io.gwola.boot.service.LogService;
 import lombok.extern.slf4j.Slf4j;

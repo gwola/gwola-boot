@@ -3,16 +3,11 @@ package io.gwola.boot.serviceimpl;
 import io.gwola.boot.dao.PermissionDao;
 import io.gwola.boot.entity.Permission;
 import io.gwola.boot.service.PermissionService;
-import io.gwola.boot.entity.Permission;
-import io.gwola.boot.service.PermissionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

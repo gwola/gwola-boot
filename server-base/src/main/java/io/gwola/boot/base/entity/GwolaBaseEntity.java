@@ -1,8 +1,8 @@
 package io.gwola.boot.base.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.gwola.boot.common.constant.CommonConstant;
 import io.gwola.boot.common.utils.SnowFlakeUtil;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
@@ -10,7 +10,9 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
+import javax.persistence.EntityListeners;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
 

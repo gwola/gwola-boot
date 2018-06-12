@@ -1,5 +1,6 @@
 package io.gwola.boot.common.aop;
 
+import cn.hutool.core.util.StrUtil;
 import io.gwola.boot.common.annotation.SystemLog;
 import io.gwola.boot.common.utils.IpInfoUtil;
 import io.gwola.boot.common.utils.ThreadPoolUtil;
@@ -7,11 +8,12 @@ import io.gwola.boot.entity.Log;
 import io.gwola.boot.entity.elasticsearch.EsLog;
 import io.gwola.boot.service.LogService;
 import io.gwola.boot.service.elasticsearch.EsLogService;
-import cn.hutool.core.util.StrUtil;
-
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.NamedThreadLocal;

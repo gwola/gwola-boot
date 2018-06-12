@@ -1,11 +1,11 @@
 package io.gwola.boot.config.interceptor;
 
+import cn.hutool.core.util.StrUtil;
 import io.gwola.boot.common.annotation.RateLimiter;
 import io.gwola.boot.common.constant.CommonConstant;
 import io.gwola.boot.common.limit.RedisRaterLimiter;
 import io.gwola.boot.common.utils.IpInfoUtil;
-import io.gwola.boot.exception.XbootException;
-import cn.hutool.core.util.StrUtil;
+import io.gwola.boot.exception.GwolaException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -52,13 +52,13 @@ public class LimitRaterInterceptor extends HandlerInterceptorAdapter {
         // IP限流 在线Demo所需 一秒限5个请求
         String token1 = redisRaterLimiter.acquireTokenFromBucket(IpInfoUtil.getIpAddr(request), 5, 1000);
         if (StrUtil.isBlank(token1)) {
-            throw new XbootException("操作太快，请点慢一点");
+            throw new GwolaException("操作太快，请点慢一点");
         }
 
         if(rateLimitEnable){
             String token2 = redisRaterLimiter.acquireTokenFromBucket(CommonConstant.LIMIT_ALL, limit, timeout);
             if (StrUtil.isBlank(token2)) {
-                throw new XbootException("当前访问总人数太多，请稍后再试");
+                throw new GwolaException("当前访问总人数太多，请稍后再试");
             }
         }
 
@@ -72,7 +72,7 @@ public class LimitRaterInterceptor extends HandlerInterceptorAdapter {
                 int timeout = rateLimiter.timeout();
                 String token3 = redisRaterLimiter.acquireTokenFromBucket(method.getName(), limit, timeout);
                 if (StrUtil.isBlank(token3)) {
-                    throw new XbootException("当前访问人数太多啦，请稍后再试");
+                    throw new GwolaException("当前访问人数太多啦，请稍后再试");
                 }
             }
         }

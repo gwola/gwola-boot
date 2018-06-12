@@ -8,19 +8,12 @@ import io.gwola.boot.entity.Log;
 import io.gwola.boot.entity.elasticsearch.EsLog;
 import io.gwola.boot.service.LogService;
 import io.gwola.boot.service.elasticsearch.EsLogService;
-import io.gwola.boot.common.utils.PageUtil;
-import io.gwola.boot.common.utils.ResultUtil;
-import io.gwola.boot.entity.Log;
-import io.gwola.boot.entity.elasticsearch.EsLog;
-import io.gwola.boot.service.LogService;
-import io.gwola.boot.service.elasticsearch.EsLogService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 

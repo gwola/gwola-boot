@@ -1,12 +1,9 @@
 package io.gwola.boot.config.security;
 
-import io.gwola.boot.common.constant.CommonConstant;
-import io.gwola.boot.common.utils.JasyptUtil;
-import io.gwola.boot.entity.Permission;
-import io.gwola.boot.entity.Role;
-import io.gwola.boot.entity.User;
 import cn.hutool.core.collection.CollUtil;
 import io.gwola.boot.common.constant.CommonConstant;
+import io.gwola.boot.entity.Permission;
+import io.gwola.boot.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

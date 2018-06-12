@@ -1,8 +1,8 @@
 package io.gwola.boot.config.security.permission;
 
+import cn.hutool.core.util.StrUtil;
 import io.gwola.boot.entity.Permission;
 import io.gwola.boot.service.PermissionService;
-import cn.hutool.core.util.StrUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;

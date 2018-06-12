@@ -1,12 +1,14 @@
 package io.gwola.boot.config.security.jwt;
 
-import io.gwola.boot.common.constant.SecurityConstant;
-import io.gwola.boot.common.utils.ResponseUtil;
-import io.gwola.boot.exception.XbootException;
 import cn.hutool.core.util.StrUtil;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import io.jsonwebtoken.*;
+import io.gwola.boot.common.constant.SecurityConstant;
+import io.gwola.boot.common.utils.ResponseUtil;
+import io.gwola.boot.exception.GwolaException;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.Jwts;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -91,7 +93,7 @@ public class JWTAuthenticationFilter extends BasicAuthenticationFilter   {
                     return new UsernamePasswordAuthenticationToken(principal, null, authorities);
                 }
             } catch (ExpiredJwtException e) {
-                throw new XbootException("登录已失效，请重新登录");
+                throw new GwolaException("登录已失效，请重新登录");
             } catch (Exception e){
                 ResponseUtil.out(response, ResponseUtil.resultMap(false,500,"解析token错误"));
             }

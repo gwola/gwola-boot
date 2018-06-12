@@ -6,7 +6,6 @@ import io.gwola.boot.config.security.jwt.AuthenticationSuccessHandler;
 import io.gwola.boot.config.security.jwt.JWTAuthenticationFilter;
 import io.gwola.boot.config.security.jwt.RestAccessDeniedHandler;
 import io.gwola.boot.config.security.permission.MyFilterSecurityInterceptor;
-import io.gwola.boot.config.IgnoredUrlsProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
