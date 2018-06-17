@@ -47,10 +47,6 @@ spring:
         max-wait: -1
         max-idle: 8
         min-idle: 0
-  # Elasticsearch
-  data:
-    elasticsearch:
-      cluster-nodes: 127.0.0.1:9300
   # 文件大小上传配置
   servlet:
     multipart:
@@ -90,12 +86,6 @@ gwola:
   loginTimeLimit: 10
   # 错误超过次数后多少分钟后才能继续登录（分钟）
   loginAfterTime: 10
-  # ES
-  elasticsearch:
-    nodeClient: 127.0.0.1:9300
-  # 日志记录方式 true使用Elasticsearch记录 false记录至数据库中
-  logRecord:
-    es: false
 
 # Swagger界面内容配置
 swagger:

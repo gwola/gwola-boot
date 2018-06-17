@@ -52,9 +52,7 @@ subprojects {
 		compile('org.springframework.boot:spring-boot-starter-aop')
 		compile('org.springframework.boot:spring-boot-starter-data-jpa')
 		compile('org.springframework.boot:spring-boot-starter-data-redis')
-		compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
 		compile('org.springframework.boot:spring-boot-starter-actuator')
-
         testCompile('org.springframework.boot:spring-boot-starter-test')
 
 		runtime('org.springframework.boot:spring-boot-devtools')

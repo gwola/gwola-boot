@@ -40,10 +40,10 @@ public class UploadController {
     public Result<Object> upload(@RequestParam("file") MultipartFile file,
                                  HttpServletRequest request) {
 
-        // IP限流 在线Demo所需 5分钟限1个请求
-        String token1 = redisRaterLimiter.acquireTokenFromBucket("upload:"+IpInfoUtil.getIpAddr(request), 1, 300000);
+        // IP限流 在线Demo所需 5分钟限100个请求
+        String token1 = redisRaterLimiter.acquireTokenFromBucket("upload:"+IpInfoUtil.getIpAddr(request), 100, 300000);
         if (StrUtil.isBlank(token1)) {
-            throw new GwolaException("上传那么多干嘛，等等再传吧");
+            throw new GwolaException("上传频率过高");
         }
 
         String imagePath = null;

@@ -17,6 +17,9 @@ import java.io.InputStream;
 /**
  * 阿里云对象存储工具类
  * @author sunyu1984
+ * 参考：https://blog.csdn.net/u014079773/article/details/66968718
+ *      https://help.aliyun.com/document_detail/32011.html
+ *
  */
 @Slf4j
 public class AliyunOSSClientUtil {
@@ -28,16 +31,15 @@ public class AliyunOSSClientUtil {
     @Value("${api.aliyun.access-key-id}")
     //阿里云API的密钥Access Key ID
     private static String ACCESS_KEY_ID;
-    @Value("${api.aliyun.endpoint}")
+    @Value("${api.aliyun.access-key-secret}")
     //阿里云API的密钥Access Key Secret
     private static String ACCESS_KEY_SECRET;
-    @Value("${api.aliyun.endpoint}")
+    @Value("${api.aliyun.backet-name}")
     //阿里云API的bucket名称
     private static String BACKET_NAME;
-    @Value("${api.aliyun.endpoint}")
+    @Value("${api.aliyun.folder}")
     //阿里云API的文件夹名称
     private static String FOLDER;
-
 
     /**
      * 获取阿里云OSS客户端对象
