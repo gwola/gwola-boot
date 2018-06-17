@@ -1,6 +1,7 @@
 package io.gwola.boot.base.entity;
 
 import lombok.Data;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -14,6 +15,7 @@ import java.util.Set;
  */
 
 @Data
+@EntityListeners(AuditingEntityListener.class)
 public abstract class GwolaTreeEntity<E extends GwolaTreeEntity> extends  GwolaBaseEntity{
 
     @Basic
