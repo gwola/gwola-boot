@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface UserRoleMapper extends BaseMapper<UserRole> {
 

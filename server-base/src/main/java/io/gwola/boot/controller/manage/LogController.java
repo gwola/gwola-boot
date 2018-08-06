@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * 拥有ROLE_ADMIN角色的用户可以访问
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 @RestController

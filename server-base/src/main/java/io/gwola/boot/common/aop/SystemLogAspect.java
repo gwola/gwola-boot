@@ -26,7 +26,7 @@ import java.util.Map;
 
 /**
  * Spring AOP实现日志管理
- * @author Exrickx
+ * @author sunyu1984
  */
 @Aspect
 @Component

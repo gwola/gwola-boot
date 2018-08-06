@@ -3,7 +3,7 @@ package io.gwola.boot.generator.bean;
 import lombok.Data;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 public class EntityOfEntity {

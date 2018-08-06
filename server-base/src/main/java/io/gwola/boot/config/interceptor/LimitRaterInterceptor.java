@@ -20,7 +20,7 @@ import java.lang.reflect.Method;
 
 /**
  * 限流拦截器
- * @author Exrickx
+ * @author sunyu1984
  * @author sunyu1984
  */
 @Slf4j

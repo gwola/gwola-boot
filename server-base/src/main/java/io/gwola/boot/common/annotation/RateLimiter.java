@@ -4,7 +4,7 @@ import java.lang.annotation.*;
 
 /**
  * 限流注解
- * @author Exrickx
+ * @author sunyu1984
  */
 @Target(ElementType.METHOD)//作用于方法上
 @Retention(RetentionPolicy.RUNTIME)

@@ -8,7 +8,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 import java.io.Serializable;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  * @author sunyu1984
  * Reference: http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.multiple-modules
  */

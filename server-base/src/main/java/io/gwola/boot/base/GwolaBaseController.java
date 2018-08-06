@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 public abstract class GwolaBaseController<E, ID extends Serializable> {
 

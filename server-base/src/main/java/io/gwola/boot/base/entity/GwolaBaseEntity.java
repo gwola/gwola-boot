@@ -17,7 +17,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 @MappedSuperclass

@@ -11,7 +11,7 @@ import javax.persistence.*;
 import java.util.List;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 @Entity

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 public class ResponseUtil {

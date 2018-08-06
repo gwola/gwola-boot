@@ -21,7 +21,7 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 /**
  * Security 核心配置类
  * 开启控制权限至Controller
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 @Configuration

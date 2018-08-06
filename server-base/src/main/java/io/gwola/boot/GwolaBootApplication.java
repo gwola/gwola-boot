@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @SpringBootApplication
 //启用JPA审计

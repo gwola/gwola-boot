@@ -3,7 +3,7 @@ package io.gwola.boot.common.vo;
 import lombok.Data;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 public class Authority {

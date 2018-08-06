@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 角色数据处理层
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface RoleDao extends GwolaBaseDao<Role,String> {
 

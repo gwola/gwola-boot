@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 public class ThreadPoolUtil {
 

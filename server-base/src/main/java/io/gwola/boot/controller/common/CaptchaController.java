@@ -19,7 +19,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Api(description = "验证码接口")
 @RequestMapping("${gwola.restPath}/common/captcha")

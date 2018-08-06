@@ -12,7 +12,7 @@ import javax.persistence.Transient;
 import java.util.List;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 @Entity

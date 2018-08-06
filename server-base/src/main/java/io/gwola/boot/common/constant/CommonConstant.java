@@ -3,7 +3,7 @@ package io.gwola.boot.common.constant;
 
 /**
  * 常量
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface CommonConstant {
 

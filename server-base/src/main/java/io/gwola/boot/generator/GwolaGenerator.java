@@ -15,7 +15,7 @@ import java.io.OutputStream;
 
 /**
  * 代码生成器
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 public class GwolaGenerator {

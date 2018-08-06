@@ -25,7 +25,7 @@ import java.util.List;
 
 /**
  * 登录成功处理类
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 @Component

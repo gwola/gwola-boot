@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 public class IpInfoUtil {

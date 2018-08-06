@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 public class ObjectUtil {
 

@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface PermissionMapper extends BaseMapper<Permission> {
 

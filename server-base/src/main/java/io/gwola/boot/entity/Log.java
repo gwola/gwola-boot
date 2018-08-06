@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import java.util.Map;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 @Entity

@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 /**
  * 用户名验证工具类
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 public class UsernameUtil {

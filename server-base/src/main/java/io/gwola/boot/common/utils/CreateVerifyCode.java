@@ -9,7 +9,7 @@ import java.util.Random;
 
 /**
  * 随机字符验证码生成工具类
- * @author Exrickx
+ * @author sunyu1984
  */
 public class CreateVerifyCode {
 

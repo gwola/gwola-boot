@@ -8,7 +8,7 @@ import org.springframework.data.domain.Pageable;
 
 /**
  * 日志接口
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface LogService extends GwolaBaseService<Log,String> {
 

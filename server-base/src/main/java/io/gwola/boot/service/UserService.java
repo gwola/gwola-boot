@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 用户接口
- * @author Exrickx
+ * @author sunyu1984
  */
 @CacheConfig(cacheNames = "user")
 public interface UserService extends GwolaBaseService<User,String> {

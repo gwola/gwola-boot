@@ -3,7 +3,7 @@ package io.gwola.boot.exception;
 import lombok.Data;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 public class GwolaException extends RuntimeException {

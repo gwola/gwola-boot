@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 @Component

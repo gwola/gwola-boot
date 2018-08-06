@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Slf4j
 @Component

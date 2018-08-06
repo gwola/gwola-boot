@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * 用户角色接口
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface UserRoleService extends GwolaBaseService<UserRole,String> {
 

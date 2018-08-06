@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Configuration
 @MapperScan("io.gwola.boot.dao.mapper")

@@ -1,7 +1,7 @@
 package io.gwola.boot.common.constant;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 public interface SecurityConstant {
 

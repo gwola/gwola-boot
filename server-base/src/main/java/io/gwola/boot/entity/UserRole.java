@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 /**
- * @author Exrickx
+ * @author sunyu1984
  */
 @Data
 @Entity
